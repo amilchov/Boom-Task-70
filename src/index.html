@@ -3,16 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <title>HTML, CSS and SASS Boilerplate</title>
+
     <meta
       name="description"
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
   </head>
   <body>
     <div class="main">
+      <div class="image">
+        <img
+          src="https://img.freepik.com/free-vector/mysterious-mafia-man-smoking-cigarette_52683-34828.jpg?w=740&t=st=1670881468~exp=1670882068~hmac=24595f0f6a64dc312b8647205f0f7a011b2e0d6510367f4eff31cdb457da5746"
+          alt=""
+          width="100"
+          height="100"
+        />
+      </div>
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
   </body>
+  <script>
+    document.querySelector(".image").onclick = () => {
+      let image = document.querySelector(".image");
+      image.setAttribute("style", "transform: scale(2);");
+    };
+  </script>
 </html>
